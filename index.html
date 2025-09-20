@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz sobre as Leis de Newton</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz das Três Leis de Newton</h1>
+      <p>
+        Responda às 10 questões sobre Dinâmica. Clique em uma alternativa para
+        saber se você acertou ou errou.
+      </p>
+    </header>
+    <main id="quiz" aria-live="polite"></main>
+    <template id="question-template">
+      <article class="question" tabindex="0">
+        <h2 class="question__title"></h2>
+        <p class="question__statement"></p>
+        <div class="question__options" role="group"></div>
+        <p class="question__feedback" aria-live="polite"></p>
+      </article>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
